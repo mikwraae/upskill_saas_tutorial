@@ -16,11 +16,17 @@
  
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
  
+ // Typography styles
  h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+// Background gradient
 .home-callout, .navbar {
     //Gradient provided by @_ighosh at uiGradients.com
     background: #00c6ff; /* fallback for old browsers */
