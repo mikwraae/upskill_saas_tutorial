@@ -17,7 +17,7 @@ class ProfilesController < ApplicationController
         # If save is succesful flash message and redirect to root_path
         if @profile.save
             flash[:success] = "Profile updated!"
-            redirect_to root_path
+            redirect_to user_path(params[:user_id])
         else
             render action: :new
         end
