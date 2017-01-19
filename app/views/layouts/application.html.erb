@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Saasapp</title>
+    <title>devMatch</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     
@@ -38,8 +38,11 @@
           
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-              <li><%= link_to "The Community", users_path %></li>
-              <li> <%= link_to "Your Profile", user_path(id: current_user.id) %></li>
+              
+              <% if current_user.profile%>
+                <li><%= link_to "Community", users_path %></li>
+                <li> <%= link_to "My Profile", user_path(id: current_user.id) %></li>
+              <% end %>
               <li> <%= link_to "My Account", edit_user_registration_path %></li>
             <% end %>
             

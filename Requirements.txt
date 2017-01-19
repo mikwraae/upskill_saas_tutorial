@@ -28,3 +28,11 @@ Done * User should be able to create and view their user profile
 Done * User profile should have a profile picture
 Done * User should be able to edit their profile
 Done * User should be able to view all user profiles
+
+
+Prior jobs in user profiles
+* Each user should be able to have multiple prior jobs
+* User should be able to add job on profile show view
+* User should be able to edit their jobs
+* User should be able to delete their prior jobs
+
