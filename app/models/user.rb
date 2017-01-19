@@ -6,6 +6,7 @@ class User < ApplicationRecord
          
   belongs_to :plan
   has_one :profile
+  has_many :jobs
   
   attr_accessor :stripe_card_token
   # If pro user passes validations (Email, password, etc),
