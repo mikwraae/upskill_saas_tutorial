@@ -36,3 +36,9 @@ Prior jobs in user profiles
 * User should be able to edit their jobs
 * User should be able to delete their prior jobs
 
+A job object consists of:
+- User id
+- Job title
+- Company name
+- Description
+
