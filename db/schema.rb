@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20170119143814) do
 
   create_table "jobs", force: :cascade do |t|
     t.integer  "user_id"
+    t.date     "start_date"
+    t.date     "end_date"
     t.string   "job_title"
     t.string   "company"
     t.text     "description"

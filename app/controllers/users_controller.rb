@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     
     # Index to /users/
     def index
-        @users = User.includes(:profile)
+        @users = User.includes(:profile, :jobs)
     
     end
     
